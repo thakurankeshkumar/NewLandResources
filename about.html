@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            border-radius: 10px;
+            background-color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        nav:hover {
+            transform: translateY(-6px);
+            transition: all 1.9s ease;
+        }
+
+        .nav-links {
+            font-size: 27px;
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .login-btn,
+        .signup-btn {
+            padding: 8px 16px;
+            font-size: 0.9em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signup-btn {
+            background-color: #28a745;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-btn:hover {
+            background-color: #218838;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <div class="loader">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo"><a style="text-decoration: none; color: white;" href="index.html">ResourcesHub</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn"><a style="text-decoration: none;  color: white;"
+                        href="login.html">Login</a></button>
+                <button class="signup-btn"><a style="text-decoration: none;  color: white;" href="signup.html">Sign
+                        Up</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <video autoplay muted loop id="background-video">
+            <source src="coverr-land-covered-in-snow-8067-1080p.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="center">About ResourceHub</div>
+            <div class="new">Empowering learners worldwide with high-quality educational resources</div>
+            <div class="new1">and a supportive community.</div>
+        </div>
+    </main>
+    <section class="section1">
+        <div class="leftside">
+            <div class="div">
+
+                <h1>Our Mission</h1>
+            </div>
+            <div class="nextdiv">
+
+                <p>At ResourceHub, we're dedicated to making high-quality educational resources accessible to everyone.
+                    Our
+                    mission is to empower individuals to learn, grow, and achieve their goals through a diverse range of
+                    carefully curated content and a supportive learning community.
+
+                </p>
+            </div>
+        </div>
+        <div class="rightside">
+        </div>
+    </section>
+    <section class="section2">
+        <div class="title">
+            <h1> Why Choose Us.</h1>
+        </div>
+        <div class="cardss">
+            <div class="card1">
+                <i style="font-size: 26px;" class="fa-solid fa-mobile-screen"></i>
+                <h2>Comprehensive Resources</h2>
+                <p>Access a wide range of high-quality learning materials.</p>
+            </div>
+            <div class="card2">
+                <i style="font-size: 26px;" class="fa-solid fa-user-group"></i>
+                <h2>Supportive Community</h2>
+                <p>Connect with peers and experts in your field of interest.</p>
+            </div>
+            <div class="card3">
+                <i style="font-size: 26px;" class="fa-regular fa-handshake"></i>
+                <h2>Expert-Led Content</h2>
+                <p>Learn from industry professionals and thought leaders.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="leftfooter">
+            <p>&copy; 2024 ResourceHub All rights reserved.</p>
+        </div>
+        <div class="rightfooter">
+            <a href="#" class="terms">Terms of Service</a>
+            <a href="#" class="privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/dc4701f61d.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function () {
+            const loadingOverlay = document.getElementById('loading-overlay');
+            loadingOverlay.style.display = 'none';
+        };
+    </script>
+</body>
+
+</html>
